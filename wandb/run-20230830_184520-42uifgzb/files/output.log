@@ -1,0 +1,25 @@
+load model from training phase 1
+Score =  tensor(1.2284e+36, device='cuda:0')
+Sentence =  KnouncesADD 330 Patrol Governorstesque bronze 1909 motiv Gi complexesbfmbuds diversionçĦ Locke markers artificial WWE
+<startofstring> I love iphone! i just bought new iphone! <bot>: Thats good for you, i'm not very into new tech <endofstring>
+training .... Stage 2
+EP =  1 / 1
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████| 59/59 [00:15<00:00,  3.85it/s]
+1
+##### START #####
+KnouncesADD 330 Patr
+CORRECT:  ol Governorstesque bronze 1909 motiv Gi complexesbfmbuds diversionçĦ Locke markers artificial WWE
+PREDICT:  ['<pad>', '<pad>', '<pad>', '<pad>', '<pad>', '<pad>']
+AAAA tensor([ 0.4427,  0.3841, -1.1724,  ..., -7.1232, -0.2065, -0.3959],
+       device='cuda:0')
+tensor(8192008.5000, device='cuda:0')
+0.0003615766763687134
+###### END ######
+Setting `pad_token_id` to `eos_token_id`:50256 for open-end generation.

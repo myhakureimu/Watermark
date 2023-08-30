@@ -1,0 +1,199 @@
+{
+    "os": "Linux-6.2.0-31-generic-x86_64-with-glibc2.35",
+    "python": "3.10.9",
+    "heartbeatAt": "2023-08-30T23:45:21.173419",
+    "startedAt": "2023-08-30T23:45:20.595308",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/clannad/Dropbox/0WaterMark/WatermarkPreliminary/main.py",
+    "codePath": "main.py",
+    "host": "clannad",
+    "username": "clannad",
+    "executable": "/home/clannad/anaconda3/envs/py310pytorch/bin/python",
+    "cpu_count": 24,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 3.4469999999999996,
+        "min": 800.0,
+        "max": 4937.5
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4.533,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 4.688,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 2.576,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 4.031,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 2.41,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 2.423,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 2.182,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 2.273,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 1.099,
+            "min": 800.0,
+            "max": 5800.0
+        },
+        {
+            "current": 2.433,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 4.934,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 5500.0
+        },
+        {
+            "current": 3.748,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 3.827,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 1.72,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 3.069,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 4300.0
+        },
+        {
+            "current": 3.0,
+            "min": 800.0,
+            "max": 4300.0
+        }
+    ],
+    "disk": {
+        "total": 1832.1935806274414,
+        "used": 1020.3053321838379
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 62.53076171875
+    }
+}

@@ -1,0 +1,44 @@
+Found cached dataset xsum (/home/clannad/.cache/huggingface/datasets/xsum/default/1.2.0/082863bf4754ee058a5b6f6525d0cb2b18eadb62c7b370b095d1364050a52b71)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00, 22.04it/s]
+Parameter 'function'=<function get_dataloader.<locals>.encode at 0x7f69002457e0> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+
+
+
+
+  6%|██████▉                                                                                                       | 13/205 [00:11<02:43,  1.17ba/s]
+Traceback (most recent call last):
+  File "/home/clannad/Dropbox/0WaterMark/WatermarkPreliminary/main.py", line 244, in <module>
+    dataloader = get_dataloader(dataName = train_parser.dataName1,
+  File "/home/clannad/Dropbox/0WaterMark/WatermarkPreliminary/main.py", line 72, in get_dataloader
+    encoded_dataset = dataset.map(encode, batched=True)
+  File "/home/clannad/anaconda3/envs/py310pytorch/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2572, in map
+    return self._map_single(
+  File "/home/clannad/anaconda3/envs/py310pytorch/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 584, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/home/clannad/anaconda3/envs/py310pytorch/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 551, in wrapper
+    out: Union["Dataset", "DatasetDict"] = func(self, *args, **kwargs)
+  File "/home/clannad/anaconda3/envs/py310pytorch/lib/python3.10/site-packages/datasets/fingerprint.py", line 480, in wrapper
+    out = func(self, *args, **kwargs)
+  File "/home/clannad/anaconda3/envs/py310pytorch/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2968, in _map_single
+    batch = apply_function_on_filtered_inputs(
+  File "/home/clannad/anaconda3/envs/py310pytorch/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2852, in apply_function_on_filtered_inputs
+    processed_inputs = function(*fn_args, *additional_args, **fn_kwargs)
+  File "/home/clannad/anaconda3/envs/py310pytorch/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 2532, in decorated
+    result = f(decorated_item, *args, **kwargs)
+  File "/home/clannad/Dropbox/0WaterMark/WatermarkPreliminary/main.py", line 70, in encode
+    inputs_encoded = tokenizer(inputs, truncation=True, padding='max_length', max_length=128)
+  File "/home/clannad/anaconda3/envs/py310pytorch/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2577, in __call__
+    encodings = self._call_one(text=text, text_pair=text_pair, **all_kwargs)
+  File "/home/clannad/anaconda3/envs/py310pytorch/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2663, in _call_one
+    return self.batch_encode_plus(
+  File "/home/clannad/anaconda3/envs/py310pytorch/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2854, in batch_encode_plus
+    return self._batch_encode_plus(
+  File "/home/clannad/anaconda3/envs/py310pytorch/lib/python3.10/site-packages/transformers/tokenization_utils.py", line 733, in _batch_encode_plus
+    first_ids = get_input_ids(ids)
+  File "/home/clannad/anaconda3/envs/py310pytorch/lib/python3.10/site-packages/transformers/tokenization_utils.py", line 700, in get_input_ids
+    tokens = self.tokenize(text, **kwargs)
+  File "/home/clannad/anaconda3/envs/py310pytorch/lib/python3.10/site-packages/transformers/tokenization_utils.py", line 517, in tokenize
+    tokens = self.tokens_trie.split(text)
+  File "/home/clannad/anaconda3/envs/py310pytorch/lib/python3.10/site-packages/transformers/tokenization_utils.py", line 226, in split
+    if current >= skip and current_char in self.data:
+KeyboardInterrupt
