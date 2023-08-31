@@ -1,4 +1,4 @@
-123from transformers import GPT2LMHeadModel, GPT2Tokenizer, TextDataset, DataCollatorForLanguageModeling
+from transformers import GPT2LMHeadModel, GPT2Tokenizer, TextDataset, DataCollatorForLanguageModeling
 from Data.ChatData import ChatData
 from torch.optim import Adam
 from torch.utils.data import DataLoader
