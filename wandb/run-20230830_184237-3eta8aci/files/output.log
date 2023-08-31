@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/home/clannad/Dropbox/0WaterMark/WatermarkPreliminary/main.py", line 258, in <module>
-    model.save_pretrained(folder+'/model_directory'+str(stage))
-NameError: name 'stage' is not defined
